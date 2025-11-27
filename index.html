@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>LanadelRei</title>
+
+    <!-- Conexões antecipadas para melhor desempenho --> 
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+      <!-- Bootstrap e ícones -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+
+      <!-- CSS personalizado --> 
+       <link rel="stylesheet" href="style.css"> 
+    </head>
+
+     <body>
+        <!-- ========== CABEÇALHO / NAVEGAÇÃO ========== --> 
+        <header class="p-5 bg-light">
+          <nav class="container d-flex justify-content-between align-items-center flex-wrap"> 
+            
+            <ul class="nav mt-3 mt-md-0"> 
+               <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li> 
+               <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li> 
+               <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li> 
+            </ul>
+            <!-- Menu de acessibilidade --> 
+            <div id="acessibilidade" class="menu-acessibilidade mt-3 mt-md-0">
+              <button id="botao-acessibilidade" class="btn btn-primary fw-bold" 
+                aria-expanded="false" aria-controls="opcoes-acessibilidade"> 
+                Acessibilidade 
+            </button> 
+            
+            <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista mt-2"> 
+               <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button> 
+               <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="Diminuir o tamanho da fonte">A-</button>
+                <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alternar contraste">
+                  <i class="bi bi-shadows"></i> </button> </div> </div>
+               </button>
+            </div> 
+        </div> 
+    </nav> 
+ </header> 
+
+ <!-- ========== CONTEÚDO PRINCIPAL ========== --> 
+ <main class="container my-5">
+    
+    <!-- Seção: Início -->
+      <section id="inicio" class="my-5"> 
+        <div class="inicio-fundo d-flex flex-wrap justify-content-between align-items-center">
+             <div class="esquerda-conteudo text-center text-md-start"> 
+                <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas a</h1>
+
+
+
+                <a href="#lana-del-rei" class="btn btn-primary btn-lg botao-inicio fw-semibold"> 
+                    Quero conhecer! 
+                </a> 
+            </div>
+            
+            <img src="img/960px-Lana_Del_Rey_at_Wembley_2025.jpg" 
+            alt="Lana Del Rey cantando em um show." 
+            title="Lana Del Rey - Domínio público / Wikimedia Commons" 
+            class="img-fluid img-inicio mt-4 mt-md-0" loading="lazy"> 
+        </div> 
+    </section>
+
+    <!-- Seção: Biografia -->
+    <section id="lana del rey" class="my-5"> 
+        <div class="row align-items-center"> 
+          <div class="col-md-5 text-center"> 
+            <img src="img/download (5).jpeg" alt="Retrato de Lana Del Rei" class="rounded-pill img-fluid" width="273" height="331"
+             loading="lazy"> 
+            </div> 
+            
+            <div class="col-md-7 mt-4 mt-md-0"> 
+                <h2>Quem é Lana Del Rey?</h2>
+                 <p>
+                  A cantora e compositora <strong>Lana Del Rey</strong> conhecida por seu estilo melancólico e cinematográfico. 
+                  Ficou famosa com "video games" e álbuns como Bom to Die e Ultraviolence. Suas músicas tratam de amor, tristeza, glamour e nostalgia,
+                  tornando-a uma das artistas mais influentes do pop alternativo.
+                   <small>Fonte: Google</small> 
+                </p> 
+            </div> 
+        </div> 
+    </section>
+
+   <!-- Seção: Galeria -->
+   <section id="galeria" class="my-5" tabindex="0"> 
+    <h2 class="text-center pt-5">Galeria</h2>
+
+     <div class="container p-3 mt-3 fundo-galeria rounded-4">
+        <div class="row justify-content-center g-3"> 
+            <div class="col-md-4 col-sm-6"> 
+                <img src="img/download (4).jpeg" alt="Lana Del Rey com um vestido preto com detalhes florido" class="img-fluid rounded-4" loading="lazy"> 
+            </div> 
+            <div class="col-md-4 col-sm-6">
+               <img src="img/download (5).jpeg" alt="Lana Del rey com um vestido bege, com cabelo feito" class="img-fluid rounded-4" loading="lazy">
+             </div>
+             <div class="col-md-4 col-sm-6"> 
+                <img src="img/download (6).jpeg" alt="Lana Del Rey" class="img-fluid rounded-4" loading="lazy"> 
+            </div> 
+        </div> 
+      </div> 
+    </section>             
+
+    <!-- Seção: Contato -->
+    <section id="contato" class="my-5"> 
+      <div class="container p-5 d-flex justify-content-center">
+        <div class="col-md-8 col-lg-10 rounded-5 formulario bg-light shadow-sm p-4"> 
+          <h2 class="mb-3">Entre em contato</h2
+
+       <form>
+         <div class="mb-3">
+           <label for="nome" class="form-label">Nome</label>
+            <input type="text" id="nome" name="nome" class="form-control rounded-3" placeholder="Digite seu nome completo" required> 
+           </div>
+
+           <div class="mb-3">
+             <label for="email" class="form-label">Email</label> 
+             <input type="email" id="email" name="email" class="form-control rounded-3" placeholder="Digite seu email" required>
+             </div>
+
+             <div class="mb-3">
+               <label for="mensagem" class="form-label">Mensagem</label> 
+               <textarea id="mensagem" name="mensagem" class="form-control rounded-4" rows="4" 
+                 placeholder="Escreva sua mensagem" required></textarea> 
+              </div>
+
+              <div class="d-grid gap-2">
+                 <button type="submit" class="btn btn-primary btn-lg rounded-pill">
+                   Enviar mensagem
+                 </button>
+               </div> 
+             </form> 
+           </div> 
+         </div> 
+       </section>
+     </main>
+
+     <!-- ========== RODAPÉ ========== --> 
+      <footer class="text-center p-3 fst-italic bg-dark text-white"> 
+        <p>Acesse nossas redes:</p> 
+        <div class="fs-3 mb-3">
+           <i class="bi bi-whatsapp mx-2"></i>
+           <i class="bi bi-instagram mx-2"></i> 
+           <i class="bi bi-tiktok mx-2"></i>
+        </div>
+        <p class="mt-3 mb-0">Desenvolvido por <strong>Start by Alura</strong>. Projeto fictício sem fins comerciais.</p>
+     </footer>
+
+     <!-- Scripts -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script> 
+       <script src="script.js"></script> 
+     </body> 
+
+     </html>
